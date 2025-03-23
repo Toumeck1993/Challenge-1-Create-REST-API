@@ -9,7 +9,7 @@ Votre mission est de créer une API REST fonctionnelle pour "MonPremierLab". Vou
 - Implémenter des endpoints pour gérer **des ressources comme les utilisateurs ou les produits.**
 - Structurer votre application pour qu’elle puisse évoluer facilement avec de nouvelles fonctionnalités.
 
-## Expected behaviour
+## Résultat attendu
 À la fin de cet atelier, votre API devra :  
 - Gérer au moins deux ressources avec des endpoints pour les opérations CRUD :  
   - **Create** (Creation),  
@@ -20,13 +20,13 @@ Votre mission est de créer une API REST fonctionnelle pour "MonPremierLab". Vou
 - Être modulaire et prête à accueillir des extensions futures.  
 - Répondre correctement aux requêtes testées avec des clients HTTP comme Postman, sans générer d’erreurs.
 
-## Where to find everything
+## Où tout trouver
 Pour mener à bien cet atelier, vous disposerez de :  
 - **Code de démarrage** : Un projet Node.js préconfiguré avec Express pour démarrer rapidement.  
 - **Documentation** : Un guide (voir le fichier README-documentation.md) sur les bases des API REST et les dépendances essentielles (comme `express` et `nodemon`).  
 - **Fichier de configuration** : Un `package.json` prêt à l’emploi pour gérer les dépendances de votre projet.
 
-## Building your project
+## Construire votre projet
 Voici les étapes pour construire votre API :  
 1. **Configurer le code de démarrage**  
    - Clonez le projet fourni et exécutez `npm install` pour installer les dépendances.
@@ -59,12 +59,12 @@ Voici les étapes pour construire votre API :
    - Utilisez Postman pour envoyer des requêtes à vos endpoints.  
    - Vérifiez que les réponses sont correctes et que les erreurs sont bien gérées.  
 
-## Deploying your project
+## Déployer votre projet
 Une fois votre API testée localement, vous pourrez la déployer sur une plateforme comme Heroku ou Vercel :  
 - Configurez des variables d’environnement pour sécuriser les informations sensibles (ex. : clés d’API).  
 - Testez vos endpoints en ligne pour confirmer leur bon fonctionnement.
 
-## Got feedback for us?
+## Des feedback pour nous?
 Nous serions ravis de connaître votre avis ! Si vous avez des suggestions pour améliorer cet atelier ou si vous avez rencontré des difficultés, n’hésitez pas à les partager avec nous. Vos retours sont essentiels pour enrichir cette expérience d’apprentissage.
 
 Cet atelier est entièrement gratuit. N’hésitez pas à le partager avec toute personne susceptible d’en bénéficier.

@@ -24,7 +24,7 @@ npm install express
 ```
 📖 [Documentation officielle d'Express](https://expressjs.com/)
 
-### 3. Installer Nodemon (optionnel)
+### 3. Installer Nodemon
 Nodemon permet de redémarrer automatiquement le serveur après chaque modification du code.
 ```sh
 npm install --save-dev nodemon
