@@ -1,0 +1,14 @@
+# Dépendances Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+yarn.lock  # Si vous utilisez Yarn au lieu de npm
+
+# Fichiers de configuration sensibles
+.env  # Fichier contenant des variables d'environnement (ex. clés API, port)
+
+# Fichiers générés par l'éditeur ou l'OS
+.DS_Store  # macOS
+Thumbs.db  # Windows
+*.swp      # Vim
+.vscode/   # Paramètres spécifiques à VS Code (optionnel, selon vos préférences)
