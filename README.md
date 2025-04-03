@@ -17,7 +17,7 @@ Imaginez un restaurant : l'API est comme le serveur qui prend votre commande. Vo
 Cette séparation claire des rôles rend le système plus organisé et permet à différents "clients" (applications web, mobiles, etc.) de communiquer avec le même "restaurant" (backend) sans connaître ses secrets de cuisine.
 
 ## Le challenge
-Votre mission est de créer une API REST fonctionnelle pour "MonPremierLab". Vous devrez :  
+Votre mission est de créer une API REST fonctionnelle pour notre site web **MonPremierLab**. Vous devrez :  
 - Comprendre les principes de l'architecture REST et ses différences avec les applications rendues côté serveur.  
 - Implémenter des endpoints pour gérer **des ressources comme les utilisateurs ou les produits.**
 - Structurer votre application pour qu'elle puisse évoluer facilement avec de nouvelles fonctionnalités.
@@ -29,6 +29,8 @@ Votre mission est de créer une API REST fonctionnelle pour "MonPremierLab". Vou
   - **Read** (Lecture) - Obtenir des informations sur une ressource
   - **Update** (Mise à jour) - Modifier une ressource existante
   - **Delete** (Supprimer) - Supprimer une ressource
+
+
 - Respecter les conventions REST : URLs claires et significatives, utilisation appropriée des méthodes HTTP (GET, POST, PUT, DELETE).  
 - Être modulaire et prête à accueillir des extensions futures.  
 - Répondre correctement aux requêtes testées avec des clients HTTP comme Postman, sans générer d'erreurs.
@@ -37,7 +39,7 @@ Votre mission est de créer une API REST fonctionnelle pour "MonPremierLab". Vou
 ## Où tout trouver
 Pour mener à bien cet atelier, vous disposerez de :  
 - **Code de démarrage** : Un projet Node.js préconfiguré avec Express pour démarrer rapidement.  
-- **Documentation** : Un guide (voir le fichier README-documentation.md) sur les bases des API REST et les dépendances essentielles (comme `express` et `nodemon`).  
+- **Documentation** : Un guide (voir le fichier README-documentation.md) sur **les bases des API REST** et les dépendances essentielles (comme `express` et `nodemon`).  
 - **Fichier de configuration** : Un `package.json` prêt à l'emploi pour gérer les dépendances de votre projet.
 
 ## Construire votre projet
@@ -102,7 +104,7 @@ Voici les étapes pour construire votre API :
 
 6. **Implémenter les endpoints GET** 
    - Créez un dossier `routes` pour organiser vos routes
-   - Ajoutez des fichiers séparés pour `userRoutes.js` et `productRoutes.js`
+   - Ajoutez des fichiers séparés pour `userRoutes.js` et `productRoutes.js` dans le dossiers routes
    - Implémentez d'abord les routes GET pour les deux ressources
    - Utilisez un tableau JavaScript simple comme "base de données" temporaire :
      ```javascript
