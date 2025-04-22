@@ -1,35 +1,51 @@
-// [Créez un tableau initial nommé 'users' contenant quelques objets représentant des utilisateurs. Chaque objet doit avoir au moins un 'id', un 'name' et un 'email'. Ajoutez d'autres propriétés si vous le souhaitez.]
+// Tableau initial d'utilisateurs
 let users = [
-    // [Exemple : { id: 1, name: "Alice", email: "alice@example.com" }]
-  ];
+   { id: 1, name: "John wick", email: "john@wick.com", age: 32 }, 
+     { id: 4, name: "Jack Reacher", email: "jack@reacher.com", age: 25 },
+     { id: 2, name: "Lebron James", email: "lebron@james.com", age: 30 },
+     { id: 3, name: "Nico Paz", email: "nico@paz.com", age: 28 }
+   ];
+ 
   
-  // [Fonction pour récupérer tous les utilisateurs. Retourne le tableau 'users'.]
+// Fonction pour récupérer tous les utilisateurs
   const getAllUsers = () => {
-    // [Ajoutez votre logique ici]
+    return users;
   };
   
-  // [Fonction pour récupérer un utilisateur par son ID. Retourne l'utilisateur ou null s'il n'existe pas.]
+  // Fonction pour récupérer un utilisateur par son ID
   const getUserById = (id) => {
-    // [Ajoutez votre logique ici, par exemple en utilisant find()]
+    return users.find(user => user.id === id) || null;
   };
   
   // [Fonction pour ajouter un nouvel utilisateur. 
   // Crée un objet avec les données fournies et l'ajoute au tableau. 
   // Retourne le nouvel utilisateur.]
   const createUser = (userData) => {
-    // [Ajoutez votre logique ici. Générez un nouvel ID basé sur la longueur du tableau, par exemple.]
-  };
+    const newId = users.length > 0 ? users[users.length - 1].id + 1 : 1;
+  const newUser = { id: newId, ...userData };
+  users.push(newUser);
+  return newUser; 
+};
   
   // [Fonction pour mettre à jour un utilisateur existant par son ID. 
   // Met à jour les champs fournis et retourne l'utilisateur modifié ou null s'il n'existe pas.]
   const updateUser = (id, userData) => {
-    // [Ajoutez votre logique ici, par exemple en utilisant findIndex()]
+    const index = users.findIndex(user => user.id === id);
+    if (index === -1) return null;
+  
+    users[index] = { ...users[index], ...userData };
+    return users[index];
   };
   
   // [Fonction pour supprimer un utilisateur par son ID. 
   // Retire l'utilisateur du tableau et retourne l'utilisateur supprimé ou null s'il n'existe pas.]
   const deleteUser = (id) => {
-    // [Ajoutez votre logique ici]
+    const index = users.findIndex(user => user.id === id);
+  if (index === -1) return null;
+
+  const deletedUser = users[index];
+  users.splice(index, 1);
+  return deletedUser;
   };
   
   module.exports = {

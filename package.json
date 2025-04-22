@@ -1,22 +1,21 @@
 {
-  "author": {
-    "name": "MonPremierLab"
-  },
+  "author": "MonPremierLab",
   "description": "Création d'une API REST avec Node.js et Express",
   "name": "manage-stock",
   "version": "1.0.0",
-  "license": "Cet atelier est fourni gratuitement pour un usage éducatif. Toute redistribution doit inclure cette mention",
+  "license": "UNLICENSED",
   "dependencies": {
     "express": "^4.21.2",
     "nodemon": "^3.1.9"
   },
-  "keywords": ["MonPremierLab", "Node.js", "Express"],
+  "keywords": [
+    "MonPremierLab",
+    "Node.js",
+    "Express"
+  ],
   "main": "src/app.js",
   "scripts": {
     "start": "node src/app.js",
     "dev": "nodemon src/app.js"
   }
 }
-
-
-
